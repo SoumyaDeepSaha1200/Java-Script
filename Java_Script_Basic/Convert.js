@@ -33,3 +33,32 @@ console.log("1" + 2)
 console.log(1 + "2")
 console.log("1" + 2 + 2) 
 console.log(1 + 2 + "2")
+
+
+
+
+
+
+
+// Momoery is two type
+//Stack (Premitive) and Heap (Non-Preminitve)
+//Stack ->
+let myYoutubeName = "Deep.com"
+let anothername= myYoutubeName
+anothername="Soumya Deep Saha"
+
+console.log(myYoutubeName)
+console.log(anothername)
+
+
+//Heap
+let userOne={
+    email: "user@google.com",
+    upi: "user@yel"
+}
+
+let userTwo=userOne
+userTwo.email = "deepadiotic@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
