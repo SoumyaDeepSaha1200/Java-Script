@@ -18,4 +18,5 @@ console.log(gameName.split())
 console.log(gameName.length)
 console.log(gameName.charAt(3))
 console.log(gameName.indexOf('e'))
+console.log(gameName.)
 
