@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep | DOM Four</title>
+</head>
+
+<body style="background-color: #212121; color: aliceblue;">
+    <ul class="language">
+        <li>Java Script</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(lanName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${lanName}`
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addLanguage("Python")
+    addLanguage("Java")
+
+
+    function addopti(lanName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lanName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addopti('golang')
+
+
+    //Edit
+    const seclang = document.querySelector("li:nth-child(2)")
+    // console.log(seclang)
+    //    seclang.innerHTML = "Ruby"
+    const newli = document.createElement('li')
+    newli.textContent = "Ruby"
+    seclang.replaceWith(newli)
+
+
+    // Edit
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>Type Script</li>'
+
+    // Remove
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()   `
+</script>
+
+</html>
